@@ -1,2 +1,0 @@
-# manami
-Mon CV Github
