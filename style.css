@@ -1,0 +1,157 @@
+#bloc_page
+{
+    width: 1000px;
+    margin: auto;
+}
+body
+{
+	background-image: url('shoji2.jpg');
+	background-size: 100%;
+	background-repeat: repeat;
+	color:#595959;
+	font-family: 'Montserrat', sans-serif;
+}
+/* photo */
+.imageflottante
+{
+	float: left;
+	background-color: #ffddcc;
+	border: 5px #a6a6a6 outset;
+	box-shadow: 10px 10px 10px #595959;
+	position:relative;
+	left: 25px;
+}
+/* nom et code postal */
+#name
+{
+	text-align: center;
+	position: relative;
+	right: 80px;
+}
+
+h2
+{
+	color: #a6a6a6;
+}
+/* section */
+section
+{
+	margin-top: 100px;
+	display: flex;
+}
+li
+{
+	list-style: none;
+	line-height: 1.5em;
+}
+#experience_professionelle
+{
+	flex:2;
+}
+#education_et_formations
+{
+	flex:2;
+}
+#competence
+{
+	flex: 1.5;
+	position: relative;
+	left: 25px;
+}
+/* aside */
+#aside 
+{
+	display: flex;
+}
+#centres_interes
+{
+	width: 50%;
+}
+#motivation
+{
+	width: 50%;
+	font-size: 1.2em;
+}
+aside
+{
+	border: 5px solid #a6a6a6;
+	border-radius: 8px;
+	text-align: justify;
+	padding: 15px;
+	font-size: 1em;
+	margin-top: 20px;
+	margin-right: 10px; 
+	margin-left:10px;
+}
+#balade
+{
+	margin-left: 10px; 
+}
+#centres_interes p
+{
+	font-size: 1em;
+	text-align: justify;
+
+}
+.photo_velo
+{
+	float: left;
+	margin-right: 2%; 
+	height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+}
+.images
+{
+	
+	height: auto;
+	width: auto;
+	max-width: 200px; 
+	max-height:200px;
+	margin:1%;
+	border: 1px solid #595959;
+}
+#images
+{
+	display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 10px;
+}
+.pin
+{
+	float: right;
+	margin-left: 2%;
+	height: auto; 
+	width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+    margin-top: 25px;
+}
+.photo_velo, .pin
+{
+	border: 1px solid #595959;
+}
+
+/* responsitive */
+@media all and (max-width: 1024px)
+{
+	#bloc_page
+	{
+		width: auto;
+	}
+	header p
+	{
+		display: none;
+	}
+	#aside, section 
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#motivation
+	{
+		font-size: 1em;
+	}
+}
